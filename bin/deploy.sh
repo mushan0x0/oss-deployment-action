@@ -125,7 +125,9 @@ upload_files() {
         --recursive \
         --update \
         "$LOCAL_PATH" \
-        "$OSS_PATH"
+        "$OSS_PATH" \
+        --include \
+        "$INCLUDE"
 }
 
 restore_ignored_files() {
